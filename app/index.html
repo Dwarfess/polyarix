@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+	<meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width">
+	
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-datepicker.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet/less" href="styles.less">
+    
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/less.js" type="text/javascript"></script>
+    
+    <script src="bootstrap/js/moment-with-locales.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/bootstrap-datepicker.js"></script>
+    <script src="bootstrap/js/bootstrap-datepicker.ru.min.js"></script>
+    
+    <script src="js/myDatePicker.js"></script>
+	
+	<title>Polyarix</title>
+</head>
+
+<body>
+   <div class="top-block">
+        <div class="container">
+            <header>
+                <div class="row">
+                   <div class="col-md-2">
+                       <a href="#" class="logo" title="Логотип компании"><img src="images/logo.png" alt=""></a>
+                   </div>     
+                   <div class="col-md-8">
+                       <nav class="navbar">
+                           <ul class = "list-inline">
+                               <li><a href="#" title="link">О туре</a></li>
+                               <li><a href="#" title="link">Календарь туров</a></li>
+                               <li><a href="#" title="link">Фотогалерея</a></li>
+                               <li><a href="#" title="link">О компании</a></li>
+                               <li><a href="#" title="link">О Баку</a></li>
+                               <li><a href="#" title="link">Новости</a></li>
+                               <li><a href="#" title="link">Партнеры</a></li>
+                           </ul>
+                       </nav>
+                   </div>
+                   <div class="col-md-2">
+                       <nav class="navbar-right">
+                           <ul class = "list-inline lang">
+                               <li><a href="#">ru</a></li>
+                               <li><a href="#" class = "lang_passive">eng</a></li>
+                           </ul>
+                       </nav>
+                   </div>
+               </div>
+           </header>
+       </div>
+    </div>
+    <div class="middle-block-one">
+        <div class="container">
+            <div class="row"> 
+                                  
+                <div class = "col-md-5">
+                    <h2>Фототур с гидом по Баку</h2>
+                    <p>Прогуляйтесь по прекрасному Баку, вслушайтесь в его легенды и получите Ваши фото на память!</p>
+                    <button>Забронировать место</button>
+                    <div class = "img-one">
+                        <div><img src="images/middle-one-img1.jpg" alt=""></div>
+                        <div><p>5+ професиональных  фотогрфий с тура</p></div>
+                    </div>
+                </div>
+                
+                <div class = "col-md-7 rel">
+                    <div class="img-two-right">
+                        <div  class = "img-two">
+                            <div class = "img">
+                                <img src="images/middle-one-img2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img-two-left">
+                        <div>
+                            <p>О нас за 2 минуты</p>
+                            <button onclick = "movie()"></button>
+                            <p>Смотреть</p>
+                        </div>
+                    </div>                    
+                </div>
+            </div>                
+        </div>
+    </div>
+    
+    <hr>
+    
+    <div class="middle-block-two">
+        <div class="container">
+            <h2>Информация о туре</h2>
+            <div class="row">
+               
+                <div class = "col-md-offset-1 col-md-5">
+                    <div class="img-one">
+                        <img src="images/middle-two-img1.jpg" alt="">
+                    </div>
+                </div>
+                
+                <div class = "col-md-5">
+                    <div class="content1">
+                        <h4>Баку: древныий и современый <br>тур-фотопрогулка
+                        </h4>
+
+                        <p>Наше путешествие начнется с древних ворот Баку – Гоша Гала. Мы прогуляемся по Старому Городу, полному архитектурных шедевров, легенд, вкусов и запахов и остановимся на знаменитом Приморском Бульваре – жемчужине города, чтобы запечатлеть Вас на лучших фотостопах.
+                        </p>
+                        
+                        <p>Фиолетовые Лондонские кэбы, иконические Flame Towers, древние крепостные стены и легендарная Девичья Башня окажутся на нашем пути, и целая серия профессиональных фотографий тура будут ждать на Вашем электронном адресе на память о нашей прогулке. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+       
+    <div class="middle-block-three">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="content2">
+                        <div class="details">
+                            <h3>Детали</h3>
+                            <div>
+                                <h4>Дни:</h4>
+                                <p>Птяница, Суббота</p>
+                            </div>
+                            <div>
+                                <h4>Время начала:</h4>
+                                <p>10:00</p>
+                            </div>
+                            <div>
+                                <h4>Место встречи:</h4>
+                                <p>Hard Rock Café Baku</p>
+                                <p>(Перед главным входом)</p>
+                            </div>
+                            <div>
+                                <h4>Состав группы:</h4>
+                                <p>До 10 человек</p>
+                            </div>
+                        </div>
+                        
+                        <div class="included">
+                            <h3>Включено</h3>
+                            <div>
+                                <p>1</p>
+                                <p>Пешеходный тур продолжительностью 3 часа с гидом-бакинцем, рассказывающем об истории и архитекуре</p>
+                            </div>
+                            <div>
+                                <p>2</p>
+                                <p>Минимум 5 Ваших профессионально обработаных фотографий сделаных во время тура</p>
+                            </div>
+                            <div>
+                                <p>3</p>
+                                <p>Дегустация национального азербайджанкого<br>хлеба-тендира (в зависимости от наличия)
+                                </p>
+                            </div>
+                            <div>
+                                <p>4</p>
+                                <p>Советы по Вашему путешестию от нашего гида</p>
+                            </div>
+                            <div>
+                                <p>5</p>
+                                <p>Сувенир от компании или карта города</p>
+                            </div>
+                        </div>
+                        
+                        <div class="shoes">
+                            <div>
+                            <img src="images/shoes.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-offset-1 col-md-7">
+                    <div id="sandbox-container">
+                        <div class = "sandbox-one"></div>
+                        <div class = "sandbox-two">
+                            <p><span>Зеленый – </span>свободные места</p>
+                            <p><span>Красный – </span>нет свободных мест</p>
+                            <p><span>Серый – </span>нет тура на эту дату</p>
+                        </div>
+                        
+                        <div class = "sandbox-three">
+                            <button>Забронировать место</button>
+                            <div class = "watch">
+                                <div>
+                                    <div><img src="images/watch.png" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content3">
+                        <div class="content3-left">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div class="content3-right">
+                            <h2>О компании</h2>
+                            
+                            <p>Добро пожаловать в самую маленькую туристическую компанию Азербайджана LGuide!</p>
+                            
+                            <p>Забронируйте нашу фотопрогулку по достопримечательностям Баку, узнайте все об истории города, послушайте бакинские мифы и легенды, расссказанные нашим гидом-фотографом, влюбленным в город!</p>
+                            
+                            <p>Приходите к нам с семьями и друзьями, пробуйте национальную еду, знакомьтесь с бакинцами и получайте прекрасные профессиональные фотографии на фоне лучших в Баку видов (мы точно знаем их все). </p>
+                            
+                            <p>Не забывайте брать с собой прекрасное настроение и удобную обувь, и в ответ мы обещаем Вам прекрасные воспоминания и подарки от компании!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+  </body>
+</html>
+
+

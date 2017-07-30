@@ -1,0 +1,845 @@
+@firstColor:#212121;
+@secondColor:#e5e5e6;
+@thirdColor:#7be352;
+@fourthColor:#a1a8ab;
+@fifthColor:#b8b9ba;
+@seventhColor:#f79038;
+
+
+body{
+    margin:0;
+    font-size:14px;
+    color:@firstColor;
+}
+
+
+.top-block{                    //BLOCK HEADER//
+    margin-top:22px;
+    
+    .logo{
+        //background: url(images/logo.png) no-repeat;
+    }
+    
+    
+    nav{
+        li{
+            a{
+                display:block;
+                padding:43px 4px;
+                text-transform: uppercase;
+                text-decoration: none !important;
+                font-family: MuseoSansCyrl;
+                font-weight: 700;
+                letter-spacing: 0.35px;
+                color:#212121;
+
+                &:hover{
+                    color:@seventhColor;
+                }
+            }
+            
+            &:nth-of-type(6) a{
+                background: url(images/f.png) no-repeat center 20px;
+                
+                &:hover{
+                    color:#496194;
+                }
+            }
+        }
+        
+        .lang{
+            font-size:120%;
+            
+            &_passive{
+                color:@fourthColor;
+            }
+            
+            a:hover{
+                color:#3f3f3f;
+            }   
+        }
+    }
+}
+        
+.middle-block-one{                //BLOCK MIDDLE ONE//                
+    font-family: MuseoSansCyrl;
+    margin-top:31px;
+    
+    h2{
+        margin-right:40px;
+        font:48px Russia;
+        font-weight: bold;
+        line-height: 58px;
+        color:@firstColor
+    }
+    
+    p{
+        margin-right:50px;
+        font-size:16px;
+        font-weight: 300;
+        line-height: 24px;
+        color:@fifthColor;
+        padding: 15px 0;
+    }
+    
+    button{
+        font-size:16px;
+        font-weight: 500;
+        padding:16px 20px 12px 20px;
+        margin:26px 0;
+        color:white;
+        background: @thirdColor;
+        border-radius:5px;
+        border:none;
+        border-bottom:6px solid darken(@thirdColor, 10%);
+        outline: inherit;
+        transition-duration: .3s;
+        box-shadow: 0 1px 0.1px 0.1px darken(@thirdColor, 20%);
+            
+        &:hover{
+            background: @seventhColor;
+            border-bottom:6px solid darken(@seventhColor, 10%);
+            box-shadow: 0 1px 0.1px 0.1px darken(@seventhColor, 20%);
+            transition-duration: .5s;
+        }
+        
+        &:active{
+            border-bottom:6px solid @seventhColor;
+            box-shadow: none;
+            transition-duration: .3s;
+        }
+    }
+    
+    .img-one{
+        margin-left:-68px;
+        
+        div{
+            float:left;
+            width:45%;
+            
+            p{
+                font: 18px Russia-LightItalic;
+                padding-top:84px;
+                line-height: 28px;
+            }
+        }
+    }
+    
+    .rel{
+        position: relative;
+    }
+    
+    .img-two-right{
+        margin:10px 0 0 33px;
+        width:682px;
+        height:520px;
+        overflow: hidden;
+    
+        .img-two{
+            width:682px;
+            height:682px;
+            border:3px solid @secondColor;
+            border-radius:1000px;
+            padding:30px;
+            background: lighten(@secondColor, 5%);
+
+            .img{
+                width:100%;
+                height:100%;
+                border-radius:1000px !important;
+                overflow: hidden;
+            }
+        }
+    }
+    
+    .img-two-left{
+        width:310px;
+        height:310px;
+        border:3px solid @secondColor;
+        position: absolute;
+        top:133px;
+        left:-70px;
+        border-radius:1000px;
+        padding:15px;
+        background: white;
+        
+        div{
+            width:100%;
+            height:100%;
+            background: lighten(@secondColor, 5%);
+            border-radius:1000px;
+            
+            
+            button{
+                margin:17px 0 13px 84px;
+                width:100px;
+                height: 100px;
+                border-radius:1000px;
+                text-align: center;
+                border:none;
+                background: url(images/play.png) no-repeat center center;
+                background-color:@seventhColor;
+                border-bottom:8px solid darken(@seventhColor, 5%);
+                outline: inherit;
+                box-shadow: 0 0 1px 1px @seventhColor;
+                
+                &:hover{
+                    background-color:@thirdColor;
+                    border-bottom:8px solid darken(@thirdColor, 5%);
+                    box-shadow: 0 0 1px 1px @thirdColor;
+                    transition-duration: .2s;
+                }
+                
+                &:active{
+                    box-shadow: 0 0 0.3px 0.3px @thirdColor;;
+                }
+            }
+            
+            p{
+                padding:0;
+                margin:0;
+                text-align: center;
+                font:16px Russia;
+                color:@seventhColor;
+                
+                &:nth-of-type(1){
+                    padding:62px 0 0 0;
+                    color:@fourthColor;
+                }
+            }
+        }
+    }
+    
+    
+}
+
+hr{
+    margin:0 !important;
+}
+
+.middle-block-two{                //BLOCK MIDDLE TWO// 
+     h2{
+        text-align: center;
+        margin: 108px 0 90px 30px;
+        font:48px Russia;
+        font-weight: bold;
+        line-height: 58px;
+        color:@firstColor;
+    }
+    
+    .img-one{
+        width:470px;
+        height:470px;
+        border-radius:1000px;
+        overflow: hidden;
+        border-bottom:8px solid lighten(@thirdColor, 20%);
+        margin-left:3px;
+        
+        img{
+            margin:-70px 0 0 -385px;
+        }
+    }
+    
+    .content1{
+        padding:0 0 0 65px;
+        
+        h4{
+            font:16px Russia;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.9px;
+            margin-top:5px;
+            line-height: 24px;
+        }
+        
+        p{
+            font: 18px MuseoSansCyrl;
+            line-height: 26px;
+            font-weight: 300;
+            color:@fifthColor;
+            padding:14px 20px 0 0;
+        }
+    }
+    
+}
+
+.middle-block-three{                //BLOCK MIDDLE THREE// 
+    .content2{
+        .details{
+            padding:0 0 0 110px;
+            
+            h3{
+                margin: 93px 0 45px 1px;
+                font:48px Russia;
+                font-weight: bold;
+                line-height: 58px;
+                color:@firstColor;
+            }
+            div{
+                padding:0 0 20px 70px;
+                
+                h4{
+                    font:16px Russia;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    letter-spacing: 0.9px; 
+                }
+                
+                p{
+                    font: 18px MuseoSansCyrl;
+                    line-height: 27px;
+                    font-weight: 300;
+                    color:@fifthColor;
+                    
+                    &:nth-of-type(2){font: 16px Russia-LightItalic;}
+                    
+                }
+                
+                &:nth-of-type(1){.bg("images/delails1.jpg")}
+                &:nth-of-type(2){.bg("images/delails2.jpg")}
+                &:nth-of-type(3){.bg("images/delails3.jpg");
+                    p:nth-of-type(1){margin:20px 0 5px 0;}}
+                &:nth-of-type(4){.bg("images/delails4.jpg")}
+            }      
+        }
+        
+        .included{
+            padding:0 0 0 110px;
+            &:after{
+                .after;
+            }
+            
+            h3{
+                margin: 64px 0 27px -2px;
+                font:48px Russia;
+                font-weight: bold;
+                line-height: 58px;
+                color:@firstColor;
+            }
+            div{
+                margin:0 0 10px -40px;
+                p{
+                    float:left;
+                    width:83%;
+                    font: 18px MuseoSansCyrl;
+                    line-height: 24px;
+                    font-weight: 300;
+                    color:@fifthColor;
+                    margin-top:11px;
+                    
+                    &:nth-of-type(1){
+                        width:14%;
+                        font: 30px Russia;
+                        color:@thirdColor;
+                    }
+                }
+                
+                &:nth-of-type(1){
+                    p:nth-of-type(2){
+                        line-height: 27px;
+                        padding-bottom: 4px
+                    }
+                }
+                
+                &:nth-of-type(3){
+                    p:nth-of-type(1){
+                        font-size: 24px;
+                    }
+                    p:nth-of-type(2){
+                        margin: 15px 0;
+                    }
+                }
+            }
+        }
+        
+        .shoes{
+            width:400px;
+            height:400px;
+            margin:67px 0;
+            border:10px solid @secondColor;
+            border-radius:1000px;
+            padding:15px;
+            background: white;
+            
+            div{
+                width:100%;
+                height: 100%;
+                border-radius:1000px;
+                background: lighten(@secondColor, 5%);
+                
+                img{
+                    margin:66px 100px;
+                }
+            }
+        }
+    }
+    
+    #sandbox-container{
+        width: 673px;
+        height: 800px;
+        margin: 107px 0 0 10px;
+        border-radius: 50px;
+        background: lighten(@secondColor, 7%);
+        border-bottom:12px solid lighten(@thirdColor, 20%);
+        overflow: hidden;
+        
+        .sandbox-one{
+            padding: 75px 155px 0 148px;
+            table{
+                td{
+                    border-radius:0 !important;
+                    padding:15px !important;
+                    border:1px solid lighten(@secondColor, 7%) !important;
+                    font: 16px MuseoSansCyrl;
+
+                    &:hover{
+                        background: @thirdColor !important;
+                        color:white !important;
+                    }
+                }
+
+                .active{
+                        background:@thirdColor !important;
+                    }
+
+                .new, .old{
+                    opacity:0 !important;
+                }
+
+                .datepicker-switch, .prev, .next{
+                    font: 30px Russia;
+                }
+
+                .disabled-date{
+                    background:@secondColor !important;
+                }
+
+                .dow{
+                    font: 16px Russia;
+                    font-weight: bold;
+                    color:lighten(@firstColor, 40%);
+                    text-transform: uppercase;
+                    padding:15px !important;
+                }  
+            }
+        }
+
+        .sandbox-two{
+            padding: 0 155px;
+
+            p{
+                font: 18px MuseoSansCyrl;
+                line-height: 24px;
+                font-weight: 300;
+                color:darken(@fifthColor, 5%);
+                padding:20px 20px 0 0;
+
+                &:nth-of-type(1) span{color:darken(@thirdColor, 10%); font-weight: bold}
+                &:nth-of-type(2) span{color:darken(@seventhColor, 10%); font-weight: bold}
+                &:nth-of-type(3) span{color:darken(@fifthColor, 10%); font-weight: bold}
+            } 
+        }
+
+        .sandbox-three{
+            padding: 0 0 0 155px;
+            &:after{
+                .after;
+            }
+
+            button{
+                float:left;
+                font-size:16px;
+                font-weight: 500;
+                padding:16px 20px 12px 20px;
+                margin:26px 0;
+                color:white;
+                background: @thirdColor;
+                border-radius:5px;
+                border:none;
+                border-bottom:6px solid darken(@thirdColor, 10%);
+                outline: inherit;
+                transition-duration: .3s;
+                box-shadow: 0 1px 0.1px 0.1px darken(@thirdColor, 20%);
+
+                &:hover{
+                    background: @seventhColor;
+                    border-bottom:6px solid darken(@seventhColor, 10%);
+                    box-shadow: 0 1px 0.1px 0.1px darken(@seventhColor, 20%);
+                    transition-duration: .5s;
+                }
+
+                &:active{
+                    border-bottom:6px solid @seventhColor;
+                    box-shadow: none;
+                    transition-duration: .3s;
+                }
+            }
+
+            .watch{
+                margin:-165px 0 0 300px;
+                width:280px;
+                height:280px;
+                float:left;
+                border:20px solid white;
+                border-radius: 1000px;
+
+                div{
+                    width:100%;
+                    height:100%;
+                    border:10px solid lighten(@secondColor, 7%);
+                    border-radius: 1000px;
+
+                    div{
+                        width:100%;
+                        height:100%;
+                        border:10px solid white;
+                        border-radius: 1000px;
+
+                        img{
+                            margin:55px 70px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .content3{
+        margin:75px 9px;
+        &:after{
+            .after;
+        }
+        
+        .content3-left{
+            width:50px;
+            float:left;
+            
+            div{
+                margin:43px auto 122px auto;
+                background: lighten(@secondColor, 7%);
+                border-radius: 100px;
+                
+                
+                &:nth-of-type(1){width:20px; height:20px;}
+                &:nth-of-type(2){width:42px; height:42px;}
+                &:nth-of-type(3){width:20px; height:20px;}
+                &:nth-of-type(4){width:42px; height:42px;}
+                &:nth-of-type(5){width:20px; height:20px;}
+            }
+        }
+        
+        .content3-right{
+            float:left;
+            padding:0 0 0 100px;
+            width:560px;
+            
+            h2{
+                margin-bottom:30px;
+                font:48px Russia;
+                font-weight: bold;
+                line-height: 58px;
+                color:@firstColor;
+            }
+            
+            p{
+               font: 18px MuseoSansCyrl;
+                line-height: 26px;
+                font-weight: 300;
+                color:@fifthColor;
+                padding:10px 0 2px 2px; 
+            }
+        }
+    }
+}
+
+.movie{
+    position: fixed;
+    width:100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 777;
+    background:rgba(0, 0, 0, 0.3);
+    
+    iframe{
+        width:50%;
+        margin:10% 25%;
+        z-index: 999;
+        border-radius:20px;
+        border:10px solid @seventhColor;
+    }
+    
+}
+
+                                //FONTS// 
+
+/* Connect font "Russia-Light"; */
+@font-face {
+    font-family: 'Russia';
+    src: local("Russia"), local("Russia-Light"),
+    	 url('fonts/Russia-Light/RussiaLight.eot') format('embedded-opentype'),
+         url('fonts/Russia-Light/RussiaLight.woff2') format('woff2'),
+         url('fonts/Russia-Light/RussiaLight.woff') format('woff'),
+         url('fonts/Russia-Light/RussiaLight.ttf') format('truetype'),
+         url('fonts/Russia-Light/RussiaLight.svg#RussiaLight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Connect font "Russia-LightItalic"; */
+@font-face {
+    font-family: 'Russia-LightItalic';
+    src: local("Russia"), local("Russia-LightItalic"),
+    	 url('fonts/Russia-LightItalic/RussiaLightItalic.eot') format('embedded-opentype'),
+         url('fonts/Russia-LightItalic/RussiaLightItalic.woff2') format('woff2'),
+         url('fonts/Russia-LightItalic/RussiaLightItalic.woff') format('woff'),
+         url('fonts/Russia-LightItalic/RussiaLightItalic.ttf') format('truetype'),
+         url('fonts/Russia-LightItalic/RussiaLightItalic.svg#RussiaLightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Connect font "Russia-Regular"; */
+@font-face {
+    font-family: 'Russia';
+    src: local("Russia"), local("Russia-Regular"),
+    	 url('fonts/Russia-Regular/RussiaRegular.eot') format('embedded-opentype'),
+         url('fonts/Russia-Regular/RussiaRegular.woff2') format('woff2'),
+         url('fonts/Russia-Regular/RussiaRegular.woff') format('woff'),
+         url('fonts/Russia-Regular/RussiaRegular.ttf') format('truetype'),
+         url('fonts/Russia-Regular/RussiaRegular.svg#RussiaRegular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Connect font "Russia-RegularItalic"; */
+@font-face {
+    font-family: 'Russia';
+    src: local("Russia"), local("Russia-RegularItalic"),
+    	 url('fonts/Russia-Italic/RussiaItalic.eot') format('embedded-opentype'),
+         url('fonts/Russia-Italic/RussiaItalic.woff2') format('woff2'),
+         url('fonts/Russia-Italic/RussiaItalic.woff') format('woff'),
+         url('fonts/Russia-Italic/RussiaItalic.ttf') format('truetype'),
+         url('fonts/Russia-Italic/RussiaItalic.svg#RussiaItalic') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Connect font "Russia-Medium"; */
+@font-face {
+    font-family: 'Russia';
+    src: local("Russia"), local("Russia-Medium"),
+    	 url('fonts/Russia-Medium/RussiaMedium.eot') format('embedded-opentype'),
+         url('fonts/Russia-Medium/RussiaMedium.woff2') format('woff2'),
+         url('fonts/Russia-Medium/RussiaMedium.woff') format('woff'),
+         url('fonts/Russia-Medium/RussiaMedium.ttf') format('truetype'),
+         url('fonts/Russia-Medium/RussiaMedium.svg#RussiaMedium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Connect font "Russia-MediumItalic"; */
+@font-face {
+    font-family: 'Russia';
+    src: local("Russia"), local("Russia-MediumItalic"),
+    	 url('fonts/Russia-MediumItalic/RussiaMediumItalic.eot') format('embedded-opentype'),
+         url('fonts/Russia-MediumItalic/RussiaMediumItalic.woff2') format('woff2'),
+         url('fonts/Russia-MediumItalic/RussiaMediumItalic.woff') format('woff'),
+         url('fonts/Russia-MediumItalic/RussiaMediumItalic.ttf') format('truetype'),
+         url('fonts/Russia-MediumItalic/RussiaMediumItalic.svg#RussiaMediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Connect font "Russia-Bold"; */
+@font-face {
+    font-family: 'Russia';
+    src: local("Russia"), local("Russia-Bold"),
+    	 url('fonts/Russia-Bold/RussiaBold.eot') format('embedded-opentype'),
+         url('fonts/Russia-Bold/RussiaBold.woff2') format('woff2'),
+         url('fonts/Russia-Bold/RussiaBold.woff') format('woff'),
+         url('fonts/Russia-Bold/RussiaBold.ttf') format('truetype'),
+         url('fonts/Russia-Bold/RussiaBold.svg#RussiaBold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Connect font "Russia-BoldItalic"; */
+@font-face {
+    font-family: 'Russia';
+    src: local("Russia"), local("Russia-BoldItalic"),
+    	 url('fonts/Russia-BoldItalic/RussiaBoldItalic.eot') format('embedded-opentype'),
+         url('fonts/Russia-BoldItalic/RussiaBoldItalic.woff2') format('woff2'),
+         url('fonts/Russia-BoldItalic/RussiaBoldItalic.woff') format('woff'),
+         url('fonts/Russia-BoldItalic/RussiaBoldItalic.ttf') format('truetype'),
+         url('fonts/Russia-BoldItalic/RussiaBoldItalic.svg#RussiaBoldItalic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+/* Connect font "MuseoSansCyrl-Thin"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-Thin"),
+    	 url('fonts/MuseoSansCyrl100/MuseoSansCyrl100.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl100/MuseoSansCyrl100.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl100/MuseoSansCyrl100.woff') format('woff'),
+         url('fonts/MuseoSansCyrl100/MuseoSansCyrl100.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl100/MuseoSansCyrl100.svg#MuseoSansCyrl100') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Connect font "MuseoSansCyrl-Light"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-Light"),
+    	 url('fonts/MuseoSansCyrl300/MuseoSansCyrl300.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl300/MuseoSansCyrl300.woff') format('woff'),
+         url('fonts/MuseoSansCyrl300/MuseoSansCyrl300.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl300/MuseoSansCyrl300.svg#MuseoSansCyrl300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Connect font "MuseoSansCyrl-Medium"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-Medium"),
+    	 url('fonts/MuseoSansCyrl500/MuseoSansCyrl500.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl500/MuseoSansCyrl500.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl500/MuseoSansCyrl500.woff') format('woff'),
+         url('fonts/MuseoSansCyrl500/MuseoSansCyrl500.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl500/MuseoSansCyrl500.svg#MuseoSansCyrl500') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Connect font "MuseoSansCyrl-Bold"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-Bold"),
+    	 url('fonts/MuseoSansCyrl700/MuseoSansCyrl700.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl700/MuseoSansCyrl700.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl700/MuseoSansCyrl700.woff') format('woff'),
+         url('fonts/MuseoSansCyrl700/MuseoSansCyrl700.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl700/MuseoSansCyrl700.svg#MuseoSansCyrl700') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Connect font "MuseoSansCyrl-Black"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-Black"),
+    	 url('fonts/MuseoSansCyrl900/MuseoSansCyrl900.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl900/MuseoSansCyrl900.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl900/MuseoSansCyrl900.woff') format('woff'),
+         url('fonts/MuseoSansCyrl900/MuseoSansCyrl900.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl900/MuseoSansCyrl900.svg#MuseoSansCyrl900') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Connect font "MuseoSansCyrl-ThinItalic"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-ThinItalic"),
+    	 url('fonts/MuseoSansCyrl100-Italic/MuseoSansCyrl100Italic.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl100-Italic/MuseoSansCyrl100Italic.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl100-Italic/MuseoSansCyrl100Italic.woff') format('woff'),
+         url('fonts/MuseoSansCyrl100-Italic/MuseoSansCyrl100Italic.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl100-Italic/MuseoSansCyrl100Italic.svg#MuseoSansCyrl100Italic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Connect font "MuseoSansCyrl-LightItalic"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-LightItalic"),
+    	 url('fonts/MuseoSansCyrl300-Italic/MuseoSansCyrl300Italic.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl300-Italic/MuseoSansCyrl300Italic.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl300-Italic/MuseoSansCyrl300Italic.woff') format('woff'),
+         url('fonts/MuseoSansCyrl300-Italic/MuseoSansCyrl300Italic.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl300-Italic/MuseoSansCyrl300Italic.svg#MuseoSansCyrl300Italic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Connect font "MuseoSansCyrl-MediumItalic"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-MediumItalic"),
+    	 url('fonts/MuseoSansCyrl500-Italic/MuseoSansCyrl500Italic.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl500-Italic/MuseoSansCyrl500Italic.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl500-Italic/MuseoSansCyrl500Italic.woff') format('woff'),
+         url('fonts/MuseoSansCyrl500-Italic/MuseoSansCyrl500Italic.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl500-Italic/MuseoSansCyrl500Italic.svg#MuseoSansCyrl500Italic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+/* Connect font "MuseoSansCyrl-BoldItalic"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-BoldItalic"),
+    	 url('fonts/MuseoSansCyrl700-Italic/MuseoSansCyrl700Italic.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl700-Italic/MuseoSansCyrl700Italic.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl700-Italic/MuseoSansCyrl700Italic.woff') format('woff'),
+         url('fonts/MuseoSansCyrl700-Italic/MuseoSansCyrl700Italic.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl700-Italic/MuseoSansCyrl700Italic.svg#MuseoSansCyrl700Italic') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Connect font "MuseoSansCyrl-BlackItalic"; */
+@font-face {
+    font-family: 'MuseoSansCyrl';
+    src: local("MuseoSansCyr"), local("MuseoSansCyrl-BlackItalic"),
+    	 url('fonts/MuseoSansCyrl900Italic/MuseoSansCyrl900Italic.eot') format('embedded-opentype'),
+         url('fonts/MuseoSansCyrl900Italic/MuseoSansCyrl900Italic.woff2') format('woff2'),
+         url('fonts/MuseoSansCyrl900Italic/MuseoSansCyrl900Italic.woff') format('woff'),
+         url('fonts/MuseoSansCyrl900Italic/MuseoSansCyrl900Italic.ttf') format('truetype'),
+         url('fonts/MuseoSansCyrl900Italic/MuseoSansCyrl900Italic.svg#MuseoSansCyrl900Italic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+                                    /*my mixings*/
+.after{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+}
+
+.divAbs(@top: 0; @left: 0){
+    position:absolute;
+    bottom:0;
+    left:0;
+    margin-top:@top;
+    margin-left:@left;
+}
+
+.bg(@url; @r: no-repeat; @s: auto; @a: scroll){
+    background: url(@url) @r left top @a;
+        -webkit-background-size: @s;
+        -moz-background-size: @s;
+        -o-background-size: @s;
+        background-size: @s;
+}
+
+.br(@font: 1px; @color: red){
+    border:@font solid @color;
+}
