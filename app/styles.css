@@ -7,6 +7,9 @@ body {
 .top-block {
   margin-top: 22px;
 }
+.top-block .pad {
+  padding: 0;
+}
 .top-block nav li a {
   display: block;
   padding: 43px 4px;
